@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass form</title>
+</head>
+<body style="justify-items: center;">
+    <Center><img src="../saturday_fresh/telengana.jpeg" width="70"></Center>
+    <center><h3 style="color: blue;">TELANGANA STATE ROAD TRANSPORT COPORATION </h3></center>
+    <center><h3>GENERAL BUS PASS APPLICATION</h3></center>
+
+    <table >
+        <form action="" >
+            <fieldset   style="width: 650px;height:">
+        <legend style="background-color: wheat;" style="color:rgb(12, 237, 42);">Applicant Details</legend>
+        <label for="name">Name <sup style="color: red;">*</sup>:-</label>
+        <input type="text" id="name"placeholder="Enter name" maxlength="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="fname">Father/Guardian's Name <sup style="color: red;">*</sup> :-</label>
+        <input type="text" id="fname"placeholder="Enter  Father name" maxlength="20"> <br><br>
+
+
+
+        <label for="Dname" >DOB <sup style="color: red;">*</sup>:-</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" id="Dname"placeholder="Enter DOB" maxlength="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="gname">Gender  <sup style="color: red;">*</sup>:-</label>
+        <input type="radio"id="gname" name="gname" value="Male">Male
+        <input type="radio"  id="gname" value="Female" name="gname">Female
+        <input type="radio"  id="gname" value="Other" name="gname">Other
+         <br>
+
+        <small><a href="#Dname">day/month/year</a></small>
+
+        <br><br>
+        <label for="emai">E-Mail <sup style="color: red;">*</sup>:-</label>
+        <input type="email" id="emai" placeholder="Enter email">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="adhar">Adhaar Number <sup style="color: red;">*</sup> :-</label>
+        <input type="text" pattern="[0-9]+" id="adhar" placeholder="Enter Adhar number">
+        <br><br>
+
+
+        <label for="wapp"> Whatsapp No. <sup style="color: red;">*</sup>:-</label>
+        <input type="text" pattern="[0-9]+" id="wapp" placeholder="Enter whatsapp no." maxlength="=10">
+        <br><br>
+        &nbsp;
+        <label for="file">Upload Photo <sup style="color: red;">*</sup>:-</label><input type="file" pattern="[0-9]+" id="file " placeholder="Enter Adhar number">
+ </fieldset>
+    </table>
+        <fieldset style="width: 650px;height:">
+            <legend style="background-color: wheat;">Residential Address Details</legend>
+
+            <label for="ADD"> Applicant's Address<sup style="color: red;">*</sup></label>
+            <textarea name="ADD" id="ADD" maxlength="50"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label for="dist">District<sup style="color: red;">*</sup>&nbsp;&nbsp;:-</label>
+           <select name="dist" id="dist">
+            <option value="HYDERABAD" selected>HYDERABAD</option>
+            <option value="SECUMDERABAD">SECUMDERABAD</option>
+            <option value="NANDAYAL">NANDAYAL</option>
+            <option value="patancheruvu">PATANCHERUVU</option>
+
+           </select>
+<br><br>
+           <label for="MAND">MANDAL <sup style="color: red;">*</sup>&nbsp;&nbsp;:-</label>
+           <select name="dist" id="MAND">
+            <option value="HYDERABAD" selected>HYDERABAD</option>
+            <option value="SECUMDERABAD">SECUMDERABAD</option>
+            <option value="NANDAYAL">NANDAYAL</option>
+            <option value="patancheruvu">PATANCHERUVU</option>
+           </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+           <label for="vill">Village <sup style="color: red;">*</sup>&nbsp;&nbsp;:-</label>
+           <select name="dist" id="vill">
+            <option value="HYDERABAD" selected>HYDERABAD</option>
+            <option value="SECUMDERABAD">SECUMDERABAD</option>
+            <option value="NANDAYAL">NANDAYAL</option>
+            <option value="patancheruvu">PATANCHERUVU</option>
+           </select><br><br>
+           <label for="pin">Pincode <sup style="color: red;">*</sup>&nbsp;&nbsp;:-</label>
+           <input type="text"placeholder="Enter Pincode" id="pin">
+        
+</fieldset>
+
+<fieldset style="width: 650px;">
+    <legend style="background-color: wheat;">Pass Type Details</legend>
+
+    <label for="city">City <sup style="color: red;">*</sup>&nbsp;&nbsp;:-</label>
+    <select name="city" id="city">
+            <option value="HYDERABAD" selected>HYDERABAD</option>
+            <option value="SECUMDERABAD">SECUMDERABAD</option>
+            <option value="NANDAYAL">NANDAYAL</option>
+            <option value="patancheruvu">PATANCHERUVU</option>
+           </select>
+           <br><br>
+           <label for="passType">Select Pass Type:</label>
+<select id="passType" name="passType" required>
+  <option value="" disabled selected>-----Select-----</option>
+  <option value="greater">GREATER PASS</option>
+  <option value="generalOrdinary">GENERAL ORDINARY ROUTE PASS MTLY</option>
+  <option value="generalMetro">GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
+  <option value="ordinary">ORDINARY PASS</option>
+  <option value="metroExpress">METRO EXPRESS PASS</option>
+  <option value="metroDeluxe">METRO DELUXE PASS</option>
+</select>
+
+</fieldset>
+
+<form action="">
+    <form>
+  <fieldset style="width: 650px; ">
+    <legend style="background-color: wheat; ">
+      Mode of Payment &amp; Pass Collection
+    </legend>
+    <label for="paymentMode" >
+      Payment Mode <sup style="color: red;">*</sup>
+    </label>
+    <select id="paymentMode" name="paymentMode" required>
+      <option value="">Select Payment Mode</option>
+      <option value="online">Online</option>
+      <option value="offline">Offline</option>
+    </select><br><br>
+
+    <label for="deliveryMode" >
+      Pass Delivery Mode <sup style="color: red;">*</sup>
+    </label>
+    <select id="deliveryMode" name="deliveryMode" required>
+      <option value="">Select Delivery Mode</option>
+      <option value="home">Home Delivery</option>
+      <option value="center">Collection Center</option>
+    </select><br><br>
+
+<td >
+        Center at which you want to Collect Pass <sup style="color: red;">*</sub>
+      </td>
+      <td>
+        <select name="center" required>
+          <option value="" selected disabled>-----Select-----</option>
+          <option value="center1">Center 1</option>
+          <option value="center2">Center 2</option>
+          <option value="center3">Center 3</option>
+        </select>
+
+    
+
+
+
+  </fieldset>
+
+  <center><input type="submit" style="background-color: #15f445;" value="Submit"></center>
+</form>
+
+</form>
+
+
+
+   
+   
+
+</body>
+</html>
